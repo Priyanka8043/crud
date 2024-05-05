@@ -1,101 +1,92 @@
-table tr td{
-    vertical-align: middle;
-}
-
-td button{
-    margin: 5px;
-}
-
-td button i{
-    font-size: 20px;
-}
-
-
-.modal-header{
-    background: #0d6efd;
-    color: #fff;
-}
-
-.modal-body form {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-.modal-body form .imgholder{
-    width: 200px;
-    height: 200px;
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
+.crud-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.imgholder .upload{
-    position: absolute;
-    bottom: 0;
-    left: 10;
-    width: 100%;
-    height: 100px;
-    background: rgba(0,0,0,0.3);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.upload i{
-    color: #fff;
-    font-size: 35px;
-}
-
-.imgholder:hover .upload{
-    display: flex;
-}
-
-.imgholder .upload input{
-    display: none;
-}
-
-.modal-body form .inputField{
-    flex-basis: 68%;
-    border-left: 5px groove blue;
-    padding-left: 20px;
-}
-
-form .inputField > div{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+h2 {
     margin-bottom: 20px;
 }
 
-form .inputField > div label{
-    font-size: 20px;
-    font-weight: 500;
-}
-
-#userForm form .inputField > div label::after{
-    content: "*";
-    color: red;
-}
-
-form .inputField > div input{
-    width: 75%;
-    padding: 10px;
+.btn {
+    padding: 8px 16px;
     border: none;
-    outline: none;
-    background: transparent;
-    border-bottom: 2px solid blue;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
 }
 
-.modal-footer .submit{
-    font-size: 18px;
+.add-btn {
+    background-color: #007bff;
 }
 
-
-#readData form .inputField > div input{
-    color: #000;
-    font-size: 18px;
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
+
+.user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.user-table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+.submit-btn {
+    background-color: #007bff;
+}
+
+.edit-btn, .delete-btn {
+    background-color: #007
